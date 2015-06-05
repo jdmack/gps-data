@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <title>Hello World</title> 
+        <script type="text/javascript" src="javascript/app.js"></script>
+        <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.js"></script>
+    </head> 
+    <body> 
+        <div>
+            <button type="button" onclick="toggleRecord()">Start Recording</button>
+            <br>
+            <button type="button" onclick="togglePlayback()">Start Playback</button>
+            
+            <table>
+                <tr>
+                    <td>Status:</td>
+                    <td id="display-status">Recording/Playback</td>
+                </tr>
+                <tr>
+                    <td>Longitude:</td>
+                    <td id="display-longitude">XX.XXXXXX</td>
+                </tr>
+                <tr>
+                    <td>Latitude:</td>
+                    <td id="display-latitude">XX.XXXXXX</td>
+                </tr>
+                <tr>
+                    <td>Heading:</td>
+                    <td id="display-heading">XXX degrees</td>
+                </tr>
+                <tr>
+                    <td>Speed:</td>
+                    <td id="display-speed">XX m/s</td>
+                </tr>
+            </table>
+        </div>
+        <div id="message">
+        </div>
+    </body> 
+</html>
