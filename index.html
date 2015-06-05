@@ -3,14 +3,18 @@
     <head> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
         <title>Hello World</title> 
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript" src="javascript/app.js"></script>
-        <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.js"></script>
+        <!--<script type="text/javascript" src="jquery/jquery.mobile-1.4.5.js"></script>-->
+
     </head> 
     <body> 
         <div>
-            <button type="button" onclick="toggleRecord()">Start Recording</button>
+            <button id="button-toggle-record" type="submit" onclick="toggleRecordClick()"><span>Start Recording</span></button>
             <br>
-            <button type="button" onclick="togglePlayback()">Start Playback</button>
+            <button id="button-toggle-playback" type="submit" onclick="togglePlaybackClick()"><span>Start Playback</span></button>
             
             <table>
                 <tr>
