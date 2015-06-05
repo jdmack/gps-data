@@ -1,4 +1,4 @@
-function stuff()
+function toggleRecord()
 {
     var messageDiv = document.getElementById('message');
     messageDiv.innerHTML = "Hi";
