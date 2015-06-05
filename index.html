@@ -3,6 +3,7 @@
     <head> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
         <title>Hello World</title> 
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -11,33 +12,34 @@
 
     </head> 
     <body> 
-        <div>
+        <div class="main">
             <button id="button-toggle-record" type="submit" onclick="toggleRecordClick()"><span>Start Recording</span></button>
-            <br>
             <button id="button-toggle-playback" type="submit" onclick="togglePlaybackClick()"><span>Start Playback</span></button>
             
-            <table>
-                <tr>
-                    <td>Status:</td>
-                    <td id="display-status">Recording/Playback</td>
-                </tr>
-                <tr>
-                    <td>Longitude:</td>
-                    <td id="display-longitude">XX.XXXXXX</td>
-                </tr>
-                <tr>
-                    <td>Latitude:</td>
-                    <td id="display-latitude">XX.XXXXXX</td>
-                </tr>
-                <tr>
-                    <td>Heading:</td>
-                    <td id="display-heading">XXX degrees</td>
-                </tr>
-                <tr>
-                    <td>Speed:</td>
-                    <td id="display-speed">XX m/s</td>
-                </tr>
-            </table>
+            <div class="display-data">
+                <table id="display-table" class="ui-overlay-shadow">
+                    <tr>
+                        <td>Status:</td>
+                        <td id="display-status"></td>
+                    </tr>
+                    <tr>
+                        <td>Longitude:</td>
+                        <td id="display-longitude"></td>
+                    </tr>
+                    <tr>
+                        <td>Latitude:</td>
+                        <td id="display-latitude"></td>
+                    </tr>
+                    <tr>
+                        <td>Heading:</td>
+                        <td id="display-heading"></td>
+                    </tr>
+                    <tr>
+                        <td>Speed:</td>
+                        <td id="display-speed"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div id="message">
         </div>
